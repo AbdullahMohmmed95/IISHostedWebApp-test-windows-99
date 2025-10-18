@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'win-iis' }
+  agent { label 'Windows' }
   options { timestamps() }
 
   environment {
@@ -8,7 +8,7 @@ pipeline {
     SITE_PATH   = 'C:\\inetpub\\wwwroot\\github.ai'
     BACKUP_ROOT = 'C:\\IISBackups'
     PUBLISH_OUT = 'publish'
-    SITE_URL    = 'http://localhost:8080/'   // update if your binding differs
+    SITE_URL    = 'http://localhost:8085/'   // update if your binding differs
     RETAIN_N    = '5'
   }
 
